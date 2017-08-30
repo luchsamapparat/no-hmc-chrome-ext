@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+    "name": "No Hypermedia Controls",
+    "description": "The purpose of this Chrome extension is to illustrate how the web would look like without hypermedia controls.",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "extension.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
